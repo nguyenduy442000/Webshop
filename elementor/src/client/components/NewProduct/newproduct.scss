@@ -1,0 +1,87 @@
+@import "../../sass/mixins";
+.section__newproduct{
+   position: relative; 
+  
+   .slick-track {
+      display: flex;
+      
+   }
+ .newproduct__btn{
+   cursor: pointer;
+   &--next{
+      @include btn-product-icon;
+      left:0;
+   }
+   &--prev{
+      @include btn-product-icon;
+      right:0;
+   }
+ }
+  
+   .title{
+      text-align: center;
+      &__divider{
+         display: block;
+         width: 60px;
+         height: 4px;
+         background-color: #e2e1e3;
+         margin:auto;
+         margin-bottom: 40px;
+         border-radius: 5px;
+         
+           
+           
+      }
+   }
+
+    .items{
+      position: relative; 
+      
+      
+    
+        &--sale{
+           display: block;
+           font-size:1.4rem;
+           color: white;
+           font-family: 'Barlow Condensed',sans-serif;
+           font-weight: 700;
+           text-transform: uppercase;
+           position: absolute;
+           width: 45px;
+           height: 45px;
+           background-color: #6768ab;
+           border-radius: 100%;
+           margin: 10px;
+           line-height: 45px;
+           text-align: center;
+           
+      
+         }
+       
+      
+        &__contents{
+         color: #2f2d3b;
+        
+           &--title{
+           
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 18px;
+            text-align: left;
+           }
+           &--price{
+            font-size: 1.4rem;
+            line-height: 19.6px;
+            text-align: left;
+           
+           }
+        }
+       
+
+    }
+    
+
+
+    
+   
+}

@@ -1,0 +1,25 @@
+.Slogan{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+   span{
+    color: #6768AB;
+   }
+}
+//Reponsive
+// Mobile <= 740px
+@media only screen and (max-width: 739px) {
+    .Slogan {
+        justify-content: center;
+    }
+  }
+  
+  // Tablet : width >= 740px and width < 1024px
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  }
+  
+  // PC : >= 1024px
+  @media only screen and (min-width: 1024px) {
+  }

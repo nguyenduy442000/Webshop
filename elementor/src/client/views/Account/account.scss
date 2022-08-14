@@ -1,0 +1,84 @@
+.c-account{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 100%;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__heading-title{
+        text-align: center;
+        font-family: 'Barlow Condensed',sans-serif;
+        font-size: 2rem;
+        line-height:3.6rem;
+        color: #2f2d3b;
+    }
+    &__authentication{
+        display: flex;
+       gap: 50px;
+
+
+    }
+    &__form{
+        width: 48%;
+        padding: 30px;
+        background-color: #f4f4f5;
+    }
+  
+
+    &-title{
+        font-family: 'Barlow Semi Condensed',sans-serif;
+        font-size: 2.1rem;
+        line-height:2.7rem;
+        color: #2f2d3b;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &-label, &-remember ,&-forgot{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.5rem;
+        line-height:2.4rem;
+        color: #2f2d3b;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    &-remember{
+        color: #63626c;
+        display: flex;
+        gap: 5px;
+    }
+    &-forgot{
+        color: #6768ab;
+    }
+
+}
+//Reponsive
+// Mobile <= 740px
+@media only screen and (max-width: 739px) {
+    .c-account{
+
+        &__authentication{
+            flex-direction: column;
+        }
+        &__form{
+            width: 100%;
+        }
+    }
+ 
+ 
+ 
+}
+    
+   
+   // Tablet : width >= 740px and width < 1024px
+   @media only screen and (min-width: 740px) and (max-width: 1023px) {
+   }
+   
+   // PC : >= 1024px
+   @media only screen and (min-width: 1024px) {
+   }
+ 

@@ -1,0 +1,144 @@
+.navigation{
+   display: flex;
+   width: 100%;
+   padding: 10px 10px;
+   border-bottom: 1px solid #2f2d3b24;
+
+   li{
+      list-style-type: none;
+     
+   }
+   
+    &__menu{
+      width: 33.333%;
+      display: flex;
+      align-items: center;
+      gap:30px;
+         .menu-title {
+            font-family: "Roboto",sans-serif;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            position: relative;
+          
+         }
+         .menu-title::before{
+            position: absolute;
+            content:"";
+            width: 100%;
+            bottom: 23px;
+            left: 0;
+            height: 1px;
+            background-color: #6768ab;
+            opacity: 0;
+            transition: all ease 0.4s;
+           
+         }
+         .menu-title:hover::before{
+            bottom: 0;
+            opacity: 1;
+            color: #6768ab;
+         }
+
+     
+         .menu__list{
+          position: relative;
+         
+         
+         }
+         .list__item{
+            position: absolute;
+            z-index: 10;
+            width: 240px;
+            height: auto;
+            background-color: #ffffff;
+            padding: 30px 20px;
+            left: -20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s linear;
+            top: 40px;
+           &--font{
+               padding: 5px 0;
+               font-family: "Roboto",sans-serif;
+               font-weight: 400;
+               font-size: 1.4rem;
+               line-height: 2.4rem;
+             
+            }
+            
+         }
+          .menu__list:hover{
+            .list__item{
+               opacity: 1;
+               visibility: visible;
+             
+            }
+          }
+          .list__item--font:hover{
+            color: #6768ab;
+          }
+          
+
+      }
+      
+      
+
+    
+    &__logo{
+      text-align: center;
+      width: 33.333%;
+    }
+    &__icon{
+      display: flex;
+      text-align: end;
+      justify-content: flex-end;
+      align-items: center;
+      width: 33.333%;
+      font-size: 1.8rem;
+      gap:20px;
+
+    }
+    
+
+}
+
+//Reponsive
+// Mobile <= 740px
+@media only screen and (max-width: 739px) {
+  .navigation{
+   position: relative;
+   &-icon{
+      width: 10%;
+    }
+    &__logo{
+      width: 80%;
+      text-align: start;
+    }
+   
+  }
+  .openMenu{
+   width: 100%;
+   background-color: #ffff;
+   position: absolute;
+   top:50px;
+   z-index: 10;
+   padding: 20px 10px;
+   margin-left: -10px;
+   font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+   
+
+  }
+   
+ }
+ 
+ // Tablet : width >= 740px and width < 1024px
+ @media only screen and (min-width: 740px) and (max-width: 1023px) {
+ }
+ 
+ // PC : >= 1024px
+ @media only screen and (min-width: 1024px) {
+ }

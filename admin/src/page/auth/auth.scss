@@ -1,0 +1,19 @@
+.c-login{
+    width: 600px;
+    margin: auto;
+    padding: 100px 0;
+    margin-top: 100px;
+  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &__title{
+        font-size: 3rem;
+        font-family: 'Roboto',sans-serif;
+        
+    }
+    &__buttons{
+        display: flex;
+       justify-content: center;
+       gap: 20px;
+       
+    }
+}

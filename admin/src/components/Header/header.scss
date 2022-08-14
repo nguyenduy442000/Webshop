@@ -1,0 +1,58 @@
+.c-header{
+    background-color: #212529;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    &__headertitle{
+        font-size: 1.25rem;
+        color: #fff;
+        padding: 5px 0 5px 16px;
+    }
+    &__icon{
+        color: rgba(255, 255, 2555, 0.55);
+        font-size: 2rem;
+    }
+    &__col1,&__col2{
+      display: flex;
+      align-items: center;
+    }
+    &__col1{
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__col2{
+        width: 85%;
+        justify-content: flex-end;
+        gap:40px;
+        margin-right: 40px;
+        position: relative;
+        cursor: pointer;
+
+    }
+ 
+    &__search{
+        display: flex;
+        
+    }
+    &__auth{
+        position: absolute;
+        top: 35px;
+        right: -50px;
+        width: 100px;
+        height: 100px;
+        background-color: #212529;
+    
+        color: white;
+        h1{
+            padding: 5px 0;
+            cursor: pointer;
+
+        }
+        h1:hover{
+            color: pink;
+        }
+    }
+}

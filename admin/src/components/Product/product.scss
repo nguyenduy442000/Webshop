@@ -1,0 +1,34 @@
+.c-Product{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+   &__title{
+    font-size: 2rem;
+    
+   }
+   &__text{
+    font-size: 1.6rem;
+   }
+   &__detail{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+   }
+   &__input{
+    padding: 10px 12px;
+}
+&__icon{
+    color: rgba(255, 255, 2555, 0.55);
+    font-size: 2rem;
+    padding:12px 12px;
+   background-color: #0099ff;
+    cursor:pointer;
+   
+}
+&__icon:hover{
+    color:white;
+}
+}  

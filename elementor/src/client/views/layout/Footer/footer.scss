@@ -1,0 +1,72 @@
+.footer{
+  padding-top: 20px;
+   display: flex;
+  
+   &__colfirst{
+    width: 20%;
+   }
+   &__col{
+    width: 20%;
+    p:first-child{
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        color: rgba(99,98,109,0.6);
+    }
+    p:nth-child(n+2){
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.1rem;
+        color:#63626c;
+    }
+    p:nth-child(n+2):hover{
+        color:#6768ab ;
+    }
+    button:hover{
+       background:#474887!important;
+       
+        cursor: pointer;
+    }
+   }
+   .icon{
+    font-weight:400;
+    font-family:"Roboto",sans-serif;
+    color:#818a91;
+    font-size:2rem;
+    line-height:2rem;
+    display:flex;
+    gap:20px;
+}
+}
+
+
+//Reponsive
+// Mobile <= 740px
+@media only screen and (max-width: 739px) {
+    .footer{
+        flex-direction: column;
+       align-items: center;
+       gap: 50px;
+       &__col,&__colfirst{
+        text-align: center;
+        width: 100%;
+        
+       }
+       .icon{
+        gap:20px;
+        justify-content: center;
+
+
+       }
+      
+     
+    }
+  }
+  
+  // Tablet : width >= 740px and width < 1024px
+  @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  }
+  
+  // PC : >= 1024px
+  @media only screen and (min-width: 1024px) {
+  }

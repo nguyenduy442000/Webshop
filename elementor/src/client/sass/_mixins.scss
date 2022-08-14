@@ -1,0 +1,23 @@
+
+@mixin img {
+    background-size: cover;
+    height: 100%;
+    transition: 1s ease;
+    
+}
+
+@mixin btn-product-icon {
+    position: absolute;
+      z-index: 101;
+      top: 213.5px;
+      font-size: 2.4rem;
+      line-height: 6rem;
+      color: #63626c;
+      display: block;
+      width: 20px;
+      height: 60px;
+      background-color: #ffffffa1;
+  
+      
+
+}

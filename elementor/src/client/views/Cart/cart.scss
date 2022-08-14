@@ -1,0 +1,50 @@
+.c-Cart{
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+   
+    
+     &__Container{
+      display: flex;
+      gap: 20px;
+      width: 50%;
+      flex-direction: column;
+    
+    
+
+     }
+
+
+    &__img{
+        width: 100px;
+        height: 100px;
+    }
+    &__content{
+
+    }
+    &__price{
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: black;
+      font-family: 'Barlow',sans-serif;
+    }
+    
+    &__Buy{
+      width: 50%;
+      border: 1px solid #6768ab;
+     padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .C-Cart__Totals{
+        display: flex;
+        gap:30px;
+       
+        
+       
+      }
+    }
+}

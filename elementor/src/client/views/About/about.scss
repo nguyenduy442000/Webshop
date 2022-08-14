@@ -1,0 +1,414 @@
+.c-about {
+  max-width: 1250px;
+margin: auto;
+  &__banner {
+    background: url(../../assets/about/slid0087.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-title {
+    text-align: center;
+    line-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    h1 {
+      font-size: 4rem;
+      font-family: "barlow Semi Condensed", sans-serif;
+      font-weight: 500;
+
+      color: #ffff;
+    }
+  }
+  &__title {
+    text-align: center;
+  }
+
+  &__divider {
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #e2e1e3;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+  }
+  &__container {
+    width:100%;
+    margin: auto;
+
+    .widgets {
+      width: 100%;
+      height: 41px;
+      &__divider {
+        padding: 20px 0;
+        &--separator {
+          display: block;
+          height: 1px;
+          background-color: #e2e1e3;
+          margin: auto;
+          margin-bottom: 40px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  &__company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      width: 50%;
+      padding: 20px;
+      h3 {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 500;
+        font-size: 2.1rem;
+        line-height: 2.7rem;
+        padding-bottom: 20px;
+      }
+    }
+
+    &-content {
+      column-count: 2;
+      column-gap: 40px;
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        color: #63626c;
+        padding-bottom: 20px;
+      }
+    }
+    &-img {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    &-img1 {
+      width: 100%;
+    }
+    &-img2 {
+      width: 100%;
+      padding-top: 30px;
+    }
+  }
+
+  &__target {
+    margin: 20px 0;
+    padding: 0 20px;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      margin: auto;
+      gap: 40px;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h3 {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 2.1rem;
+        line-height: 2.7rem;
+        font-weight: 500;
+        color: #2f2d3b;
+        margin-top: 20px;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        color: #63626c;
+        margin-top: 20px;
+      }
+    }
+  }
+  &__elementor {
+    width: 55px;
+    height: 55px;
+    background-color: #6768ab;
+    border-radius: 100%;
+    position: relative;
+    margin: auto;
+  }
+  &__icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(50% - 13px);
+    font-size: 2.4rem;
+    color: #ffff;
+  }
+
+  &__collections {
+    width:100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    &-title {
+      width: 60%;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      color: #63626c;
+      margin: auto;
+      padding-bottom: 40px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+  
+    
+   
+  }
+  &__item{
+    width: 25%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+   
+   
+   
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%; 
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; 
+}
+&__item:hover{
+    .c-about__image{
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+  
+}
+
+&__content{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 4% 8%;
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+ 
+   
+
+   
+   &-title{
+      font-family: 'Barlow Semi Condensed',sans-serif;
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      color:#ffffff;
+      font-weight: 500;
+      margin-bottom: 15px;
+   }   
+   &-text{
+ font-family: 'Barlow',sans-serif;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color:#ffffff;
+      font-weight: 400;
+      margin-bottom: 15px;
+   }
+   &-btn{
+    font-family: 'Barlow',sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color:#ffffff;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 10px 13px;
+    border: 1px solid #ffffff80;
+    cursor: pointer;
+
+   }
+}
+//    start quote
+&__quote{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0;
+  &-icon{
+   font-size: 2.4rem;
+   font-weight: 900;
+   color: #6768ab;
+  }
+  &-title{
+     font-size: 2.4rem;
+     line-height: 3.4rem;
+     font-weight: 400;
+     font-family: 'Barlow',sans-serif;
+     color: #2f2d3b;
+    display: block;
+    max-width: 700px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  &-author{
+   font-weight: 700;
+   font-size: 1.5rem;
+   line-height: 2.4rem;
+   font-family: 'Roboto',sans-serif;
+   span{
+    font-weight: 400;
+   }
+  }
+  }
+  &__partners{
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    margin-bottom: 200px;
+    &-content{
+     display: flex;
+     flex-direction: column;
+     
+      img{
+           width: 200px;
+           height: 134px;
+           opacity: 0.5;
+           transition: opacity ease-in 0.5s;
+      }
+      img:hover{
+        opacity: 1;
+
+      }
+      h3{
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        color: #2f2d3b;
+        font-family: 'Barlow Semi Condensed',sans-serif;
+        font-weight: 500;
+        padding: 30px 0 10px 0;
+
+     
+      }
+      p{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: rgba(99, 98, 108, 0.6);
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+     
+      }
+    }
+  }
+  &__picture{
+    display: flex;
+    width: 50%;
+  }
+  .c-about__company-img{
+    width: 50%;
+  }
+
+}
+.item-marginTop{
+    margin-top: 50px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border: 1px solid #2f2d3b24;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+ 
+  font-size: 1.5rem;
+  color: #3333;
+  transition: color ease-in 0.3s;
+  
+}
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after {
+  color:#63626c;
+  
+  
+}
+//Reponsive
+// Mobile <= 740px
+@media only screen and (max-width: 735px) {
+ .c-about__company{
+   flex-direction: column;
+   &-text{
+    width: 100%;
+   }
+   &-content{
+    column-count: 1;
+   }
+ }
+ .c-about__picture{
+  width: 100%;
+ }
+ .c-about__target-container{
+  flex-direction: column;
+ }
+ .c-about__items{
+  flex-direction: column;
+  
+ }
+ .c-about__item{
+   width: 100%;
+   
+ }
+}
+
+// Tablet : width >= 740px and width < 1024px
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+// PC : >= 1024px
+@media only screen and (min-width: 1024px) {
+}
