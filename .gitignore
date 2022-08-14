@@ -1,2 +1,4 @@
 /admin/node_modules
 /elementor/node_modules
+/elementor/public
+/admin/public
